@@ -1,4 +1,15 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+
+# ERD / Wireframe
+![unnamed](https://cloud.githubusercontent.com/assets/26236941/26801224/30ef4684-4a0a-11e7-9de7-6d412525ca8e.jpg)
+![unnamed-1](https://cloud.githubusercontent.com/assets/26236941/26801228/32952800-4a0a-11e7-9571-d9f8a56bee43.jpg)
+
+
+# User Stories
+	• As a user, I want to be able to sign up, sign in, sign out, and change password.
+	• As a user, I want to be able to post an item to share.
+	• As a user, I want to respond to an existing post.
+	• As a user, I want a update and delete my posts.
+
 
 # Authentication in Ember
 
