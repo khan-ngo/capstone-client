@@ -16,6 +16,7 @@ Router.map(function () {
   this.route('my-items');
   this.route('message');
   this.route('conversation');
+  this.route('category');
 });
 
 export default Router;
