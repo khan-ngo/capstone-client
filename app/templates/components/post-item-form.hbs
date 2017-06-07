@@ -1,5 +1,15 @@
 <form {{action "submit" on="submit"}}>
   <div class="form-group">
+    <label for="category_id">Category:</label>
+    <select class="form-control" name="category_id" required {{action 'selectValue' on='change'}}>
+      <option disabled selected> -- Select Category -- </option>
+      {{#each categories as |category|}}
+        <option value={{category.id}}>{{category.name}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div class="form-group">
     <label for="title">Title:</label>
     {{input
             class="form-control"
@@ -14,7 +24,7 @@
     {{input
             class="form-control"
             id="location"
-            placeholder="e.g. Kendall Square"
+            placeholder="Where is this item located"
             value=item.location
             required="required"}}
   </div>
@@ -29,11 +39,12 @@
             required="required"}}
   </div>
 
-  <button type="submit" class="btn edit-item-button">
-    Save
+
+  <button type="submit" class="btn post-item-button">
+    Post Item
   </button>
 
-  <button class="btn cancel-button" {{action "back"}}>
-    Cancel
+  <button class="btn cancel-button" {{action "reset"}}>
+    Reset
   </button>
 </form>
