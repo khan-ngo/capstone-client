@@ -1,0 +1,8 @@
+<h2>Messages</h2>
+<div class="meta-line"></div>
+
+<div class="conversations-list">
+  {{#each model as |conversation|}}
+    {{cupo-conversation/card conversation=conversation}}
+  {{/each}}
+</div>
