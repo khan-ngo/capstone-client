@@ -10,15 +10,29 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('item', function() {
-    this.route('edit');
-  });
-  this.route('my-items');
-  this.route('message');
-  this.route('conversation');
-  this.route('category');
-  this.route('categories');
-  this.route('conversations');
+
+  // this.route('item', function() {
+  //   this.route('edit');
+  // });
+  // this.route('my-items');
+  // this.route('categories');
+  // this.route('category', { path: 'categories/:category_id' });
+  //
+  // this.route('message', {path: 'messages/:message_id'});
+  //
+  // this.route('conversations');
+  // this.route('conversation', { path: 'conversations/:conversation_id' });
+this.route('categories');
+this.route('category', { path: 'categories/:category_id' });
+this.route('post-item');
+this.route('my-items');
+this.route('item', {path: 'items/:item_id'});
+this.route('item/edit', {path: 'items/:item_id/edit'});
+
+this.route('conversations');
+this.route('conversation', { path: 'conversations/:conversation_id' });
+this.route('message', {path: 'messages/:message_id'});
+
 });
 
 export default Router;
