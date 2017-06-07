@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('item', function() {
     this.route('edit');
   });
+  this.route('my-items');
 });
 
 export default Router;
