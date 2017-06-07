@@ -1,2 +1,218 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+$white: #fff;
+$link-water: #ced0d6;
+$med-gray: #5c6670;
+$black: #000;
+$brown: #4a3636;
+$light-brown: #a39592;
+$lighter-brown: #d9cecc;
+$olive: #b0afa5;
+$redish: #9c414e;
+$greenish: #6e9985;
+$blueish: #62a0bb;
+$owner-message: #6f737a;
+$other-message: #806d75;
+$background: #ece6e5;
+$nav-btns: #5a6a76;
+
+body {
+  background: $background;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  // margin: .3em 0;
+}
+
+a {
+  color: $black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-transform: none;
+}
+
+.meta-line {
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.navbar {
+  margin-top: 5px;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+textarea { resize: vertical; }
+
+// .sidebar-wrapper {
+//
+// }
+
+.sidebar-nav {
+  list-style: none;
+  margin-top: 75px;
+  padding-left: 50px;
+  top: 0;
+
+  li {
+    background-color: $nav-btns;
+    border: 1px solid $nav-btns;
+    border-radius: 5px;
+    line-height: 40px;
+    list-style-position: inside;
+    margin: 7px;
+    text-align: center;
+    width: 150px;
+
+    a {
+      color: $white;
+    }
+
+    a:hover {
+      color: $olive;
+    }
+  }
+}
+
+.content {
+  margin: 50px 30px 70px;
+}
+
+.sign-forms {
+  margin-left: 70px;
+}
+
+.category-list,
+.conversations-list {
+  margin: 20px 0 0 50px;
+
+  h4 {
+    margin: 25px 0;
+  }
+
+  a:hover {
+    color: $redish;
+  }
+}
+
+.post-item-form {
+  margin: 20px;
+
+  button:hover {
+    color: $background;
+  }
+}
+
+.post-item-button,
+.edit-item-button,
+.post-message-button,
+.sign-in-button,
+.sign-up-button {
+  background-color: $blueish;
+  color: $white;
+}
+
+.cancel-button {
+  background-color: $light-brown;
+  color: $white;
+}
+
+.my-items-list {
+  margin: 20px;
+
+  li {
+    border-bottom: 1px solid $black;
+    list-style: none;
+    // width: 275px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .my-items-buttons {
+    margin: 10px 0 0 30px;
+    text-align: right;
+
+    .delete-button {
+      background-color: $redish;
+      color: $white;
+      margin-top: 2px;
+    }
+
+    .edit-button {
+      background-color: $greenish;
+      color: $white;
+      margin-top: 2px;
+    }
+
+    button:hover {
+      color: $background;
+    }
+  }
+}
+
+.category-items-list {
+  font-size: 16px;
+  margin: 15px;
+
+  li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+
+  a:hover {
+    color: $greenish;
+  }
+}
+
+.single-item {
+  margin: 20px 0 0 50px;
+
+  .location {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.conversation-messages-list {
+  ul {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 10px;
+
+    li {
+      list-style: none;
+      margin: 5px;
+    }
+  }
+
+  .owner-message {
+    color: $owner-message;
+    text-align: right;
+  }
+
+  .other-message {
+    color: $other-message;
+  }
+}
+
+.website-logo {
+  float: left;
+  height: auto;
+  max-height: 37px;
+  margin-top: -10px;
+  margin-right: 7px;
+
+}
