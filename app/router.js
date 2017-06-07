@@ -14,6 +14,7 @@ Router.map(function () {
     this.route('edit');
   });
   this.route('my-items');
+  this.route('message');
 });
 
 export default Router;
