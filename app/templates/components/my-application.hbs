@@ -4,9 +4,9 @@
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
-        <!-- {{#if isAuthenticated}}
+        {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
-        {{/if}} -->
+        {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
@@ -31,13 +31,13 @@
             </li>
             {{!-- <li>
               {{#link-to "post-item"}}Post Item{{/link-to}}
-            </li>
+            </li> --}}
             <li>
               {{#link-to "my-items"}}My Items{{/link-to}}
             </li>
             <li>
               {{#link-to "conversations"}}Messages{{/link-to}}
-            </li> --}}
+            </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
