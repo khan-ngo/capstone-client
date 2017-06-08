@@ -1,53 +1,9 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
+@import 'color';
 
 
-$background: rgba(0, 0, 0, .03);
-$white: #FFF;
-
-$mediumgrey: #46484A;
-$lightgrey: #BFBFBF;
-$lightergrey: #D9D9D9;
-
-$darkgreen: #294022;
-$sage: #508569;
-$lightgreen: #7B9653;
-$pink: #F0184A;
-$gold: #AD6316;
-
-
-$black: #000;
-$red: #a50d0d;
-$grey: #b7b7b2;
-$gold: #edc525;
-$white: #fff;
-$orange: #db6e08;
-$purple: #56037c;
-$dark-blue: #02074c;
-$blue: #101ff2;
-$light-blue: #99e8ef;
-$teal: #8af2d9;
-$sky-blue: #6aebf2;
-$light-grey: #bcbcbc;
-$dark-grey: #595555;
-$dark-orange: #9e4801;
-
-$white: #fff;
-$link-water: #ced0d6;
-$med-gray: #5c6670;
-$black: #000;
-$brown: #4a3636;
-$light-brown: #a39592;
-$lighter-brown: #d9cecc;
-$olive: #b0afa5;
-$redish: #9c414e;
-$greenish: #6e9985;
-$blueish: #62a0bb;
-$owner-message: #6f737a;
-$other-message: #806d75;
-$background: #ece6e5;
-$nav-btns: #5a6a76;
 
 body {
   background: $white;
@@ -57,18 +13,34 @@ body {
   // margin: .3em 0;
 }
 
-a {
-  color: $black;
-}
+// a {
+//   color: $black;
+// }
+//
+// a:hover {
+//   text-decoration: none;
+// }
 
-a:hover {
-  text-decoration: none;
-}
+// h1,
+// h2 {
+//   font-family: 'Playfair Display', serif;
+//   text-transform: none;
+// }
 
-h1,
-h2 {
-  font-family: 'Playfair Display', serif;
-  text-transform: none;
+h1 h2 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	font-size: 36px;
+	line-height: 40px;
+	padding: 15px 15px 15px 15%;
+	color: #355681;
+	box-shadow:
+		inset 0 0 0 1px rgba(53,86,129, 0.4),
+		inset 0 0 5px rgba(53,86,129, 0.5),
+		inset -285px 0 35px white;
+	border-radius: 0 10px 0 10px;
 }
 
 .meta-line {
@@ -85,38 +57,38 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
 }
-
-textarea { resize: vertical; }
+//
+// textarea { resize: vertical; }
 
 // .sidebar-wrapper {
 //
 // }
 
-.sidebar-nav {
-  list-style: none;
-  margin-top: 75px;
-  padding-left: 50px;
-  top: 0;
-
-  li {
-    background-color: $nav-btns;
-    border: 1px solid $nav-btns;
-    border-radius: 5px;
-    line-height: 40px;
-    list-style-position: inside;
-    margin: 7px;
-    text-align: center;
-    width: 150px;
-
-    a {
-      color: $white;
-    }
-
-    a:hover {
-      color: $olive;
-    }
-  }
-}
+// .sidebar-nav {
+//   list-style: none;
+//   margin-top: 75px;
+//   padding-left: 50px;
+//   top: 0;
+//
+//   li {
+//     background-color: $nav-btns;
+//     border: 1px solid $nav-btns;
+//     border-radius: 5px;
+//     line-height: 40px;
+//     list-style-position: inside;
+//     margin: 7px;
+//     text-align: center;
+//     width: 150px;
+//
+//     a {
+//       color: $white;
+//     }
+//
+//     a:hover {
+//       color: $olive;
+//     }
+//   }
+// }
 
 .content {
   margin: 50px 30px 70px;
@@ -141,9 +113,8 @@ textarea { resize: vertical; }
 
 .post-item-form {
   margin: 20px;
-
   button:hover {
-    color: $background;
+    color: $olive;
   }
 }
 
@@ -174,7 +145,7 @@ textarea { resize: vertical; }
 
   .my-items-buttons {
     margin: 10px 0 0 30px;
-    text-align: right;
+    // text-align: right;
 
     .delete-button {
       background-color: $redish;
@@ -189,10 +160,13 @@ textarea { resize: vertical; }
     }
 
     button:hover {
-      color: $background;
+      color: $black;
+      background-color: yellow;
     }
   }
 }
+
+
 
 .category-items-list {
   font-size: 16px;
@@ -218,6 +192,7 @@ textarea { resize: vertical; }
   }
 }
 
+
 .conversation-messages-list {
   ul {
     background-color: $white;
@@ -240,12 +215,7 @@ textarea { resize: vertical; }
   }
 }
 
-.landing-image {
-  max-width: 100%;
-  max-height: 90%;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
+
 
 .website-logo {
   float: left;
@@ -300,22 +270,57 @@ textarea { resize: vertical; }
 }
 
 // modal alternative
+.landing-image {
+  max-width: 100%;
+  max-height: 90%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.content-image {
 
-.post-form-design {
-  background-color: #5C5C5C;
-  border: 3px dotted white;
-  border-radius: 15px;
-  color: #555555;
-  text-align: center;
-  text-shadow: 2px 2px 3px black;
-  margin: 30px auto;
-  max-width: 750px;
+    max-width: 100%;
+    max-height: 90%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+section {
+  align-items: center;
 }
 
-.sign-in-title {
-  color: #ffffff;
+.post-item-form-design {
+  background-color: #EFEBD5;
+  border: 3px;
+  border-radius: 15px;
+  color: #555555;
+  margin: 30px auto;
+  max-width: 750px;
+  padding: 10px;
+  text-align: left;
+  // background-image:url(http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share-800x450.jpg);
+}
+
+.bottom-btn {
+  text-align: center;
 }
 
 #user-input-btn {
   margin: 20px 0;
+}
+
+.post-form-design {
+  background-color: #EFEBD5;
+  border: 3px;
+  border-radius: 15px;
+  color: #555555;
+  margin: 30px auto;
+  max-width: 750px;
+  padding-top: 10px;
+  text-align: center;
+  // background-image:url(http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share-800x450.jpg);
+
+}
+
+.authentication-form-title {
+  color: #ffffff;
 }
