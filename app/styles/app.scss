@@ -1,6 +1,38 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
+
+
+$background: rgba(0, 0, 0, .03);
+$white: #FFF;
+
+$mediumgrey: #46484A;
+$lightgrey: #BFBFBF;
+$lightergrey: #D9D9D9;
+
+$darkgreen: #294022;
+$sage: #508569;
+$lightgreen: #7B9653;
+$pink: #F0184A;
+$gold: #AD6316;
+
+
+$black: #000;
+$red: #a50d0d;
+$grey: #b7b7b2;
+$gold: #edc525;
+$white: #fff;
+$orange: #db6e08;
+$purple: #56037c;
+$dark-blue: #02074c;
+$blue: #101ff2;
+$light-blue: #99e8ef;
+$teal: #8af2d9;
+$sky-blue: #6aebf2;
+$light-grey: #bcbcbc;
+$dark-grey: #595555;
+$dark-orange: #9e4801;
+
 $white: #fff;
 $link-water: #ced0d6;
 $med-gray: #5c6670;
@@ -208,11 +240,82 @@ textarea { resize: vertical; }
   }
 }
 
+.landing-image {
+  max-width: 100%;
+  max-height: 90%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
 .website-logo {
   float: left;
   height: auto;
   max-height: 37px;
   margin-top: -10px;
   margin-right: 7px;
+}
 
+.welcome-info {
+  background-color: $grey;
+  color: $red;
+  border-radius: 15px;
+  font-size: 21px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding: 2px;
+  text-align: center;
+  width: auto;
+}
+
+.modal-header {
+  text-align:center;
+  background-color: $blueish;
+}
+
+.modal-footer {
+  background-color: #DDD7C3;
+}
+
+.auth-form {
+  padding: 50px;
+}
+
+#sign-in-modal {
+  position: fixed;
+  border: 10px solid #000;
+  // background-image: url(https://www.vanermuseet.se/wp-content/uploads/2017/03/19fd88b79ea7d8bf32a31e9938bf211c.jpg)
+}
+
+// .auth-modal-body {
+//   background-image:url(http://17026-presscdn-0-98.pagely.netdna-cdn.com/wp-content/uploads/sites/11/shutterstock_237595765-634x0-c-default.jpg);
+//   max-width: 100%;
+//   max-height: 100%;
+// }
+
+#sign-up-modal {
+  position: fixed;
+  border: 10px solid #000;
+  // background-image:url(http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share-800x450.jpg);
+
+}
+
+// modal alternative
+
+.post-form-design {
+  background-color: #5C5C5C;
+  border: 3px dotted white;
+  border-radius: 15px;
+  color: #555555;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  margin: 30px auto;
+  max-width: 750px;
+}
+
+.sign-in-title {
+  color: #ffffff;
+}
+
+#user-input-btn {
+  margin: 20px 0;
 }

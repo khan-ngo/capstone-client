@@ -1,11 +1,59 @@
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
-{{password-confirmation-input password=credentials.passwordConfirmation}}
+{{!-- <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
 
-<button type="submit" class="btn btn-primary" {{action "submit"}}>
-  Sign Up
-</button>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalLabel">Sign Up</h4>
+      </div>
+      <div class="modal-body auth-modal-body">
 
-<button class="btn btn-default" {{action "reset"}}>
-  Cancel
-</button>
+        {{#each flashMessages.queue as |flash|}}
+          {{flash-message flash=flash}}
+        {{/each}}
+
+        <form class="auth-form">
+          {{email-input email=credentials.email}}
+          {{password-input password=credentials.password}}
+          {{password-confirmation-input password=credentials.passwordConfirmation}}
+        </form>
+
+      </div>
+      <div class="modal-footer">
+
+        <button type="submit" class="btn btn-primary" {{action "submit"}}>
+          Sign Up
+        </button>
+
+        <button class="btn btn-default" {{action "reset"}}>
+          Reset
+        </button>
+
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> --}}
+
+
+<section class="post-form-design">
+  <h2 class="sign-in-title" >Sign Up</h2>
+  {{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+
+  <form class="auth-form">
+  {{email-input email=credentials.email}}
+  {{password-input password=credentials.password}}
+  {{password-confirmation-input password=credentials.passwordConfirmation}}
+</form>
+
+  <button type="submit" id="user-input-btn" class="btn btn-primary" {{action "submit"}}>
+    Sign Up
+  </button>
+
+  <button class="btn btn-default" {{action "reset"}}>
+    Reset
+  </button>
+</section>
