@@ -26,7 +26,6 @@
   </div>
 </nav>
 
-
 <div>
   {{#each flashMessages.queue as |flash|}}
     {{flash-message flash=flash}}
@@ -58,11 +57,15 @@
       </div>
 
             <button type="button" class="btn btn-block sign-in-button" data-toggle="modal" data-target="#sign-in-modal">
+
               {{#link-to "sign-in"}}Sign In{{/link-to}}
+
             </button>
 
             <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#sign-up-modal">
+
             {{#link-to "sign-up"}}Sign Up{{/link-to}}
+
             </button>
   {{/if}}
 
