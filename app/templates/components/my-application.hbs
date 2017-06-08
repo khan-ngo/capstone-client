@@ -4,24 +4,34 @@
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
-        {{#if isAuthenticated}}
+        {{!-- {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
-        {{/if}}
+        {{/if}} --}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
+
         {{#if isAuthenticated}}
         <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
         <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
         {{else}}
-        <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
-        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>
+
+        <!-- Button trigger modal -->
+
+        {{!-- <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li> --}}
+        {{!-- <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li> --}}
         {{/if}}
+
       </ul>
     </div>
   </div>
 </nav>
 
+
 <div>
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
+
   {{#if isAuthenticated}}
     <!-- Sidebar -->
     <div class="col-md-3">
@@ -35,17 +45,26 @@
             <li>
               {{#link-to "my-items"}}My Items{{/link-to}}
             </li>
-            {{!-- <li>
+            <li>
               {{#link-to "conversations"}}Messages{{/link-to}}
-            </li> --}}
+            </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
-  {{/if}}
 
-  {{#each flashMessages.queue as |flash|}}
-    {{flash-message flash=flash}}
-  {{/each}}
+      {{else}}
+      <div class='welcome-info'>Out with the old, in with the new.
+<img class="landing-image" src="http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share.jpg">Don't adding to the landfill! Share your unwanted items!
+      </div>
+
+            <button type="button" class="btn btn-block sign-in-button" data-toggle="modal" data-target="#sign-in-modal">
+              {{#link-to "sign-in"}}Sign In{{/link-to}}
+            </button>
+
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#sign-up-modal">
+            {{#link-to "sign-up"}}Sign Up{{/link-to}}
+            </button>
+  {{/if}}
 
   <div class="col-md-8">
     <div class="content">
