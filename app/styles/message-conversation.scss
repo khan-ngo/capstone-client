@@ -1,0 +1,22 @@
+
+.conversation-messages-list {
+  ul {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 10px;
+
+    li {
+      list-style: none;
+      margin: 5px;
+    }
+  }
+
+  .owner-message {
+    color: $owner-message;
+    text-align: right;
+  }
+
+  .other-message {
+    color: $other-message;
+  }
+}

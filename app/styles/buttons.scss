@@ -1,0 +1,71 @@
+.submit {
+  background-color: $darkgreen;
+  color: $white;
+}
+
+.submit:hover {
+  background-color: $sage;
+  color: $white;
+}
+
+.edit-btn {
+  border: 0;
+  box-shadow: none;
+  font-style: italic;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: $lightergrey;
+}
+
+.edit-btn:hover {
+  color: $gold;
+  cursor: pointer;
+}
+
+.del-btn {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-left: 5px;
+  color: $lightergrey;
+}
+
+.del-btn:hover {
+  color: $pink;
+  cursor: pointer;
+}
+
+.del-btn-sm {
+  font-size: 1.2em;
+  margin-left: 10px;
+  vertical-align: bottom;
+  font-weight: 700;
+  color: $lightergrey;
+}
+
+.del-btn-sm:hover {
+  color: $pink;
+  cursor: pointer;
+}
+
+.add-item {
+  color: $lightergrey;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.post-item-button,
+.edit-item-button,
+.post-message-button,
+.sign-in-button,
+.sign-up-button {
+  background-color: $blueish;
+  color: $white;
+}
+
+.cancel-button {
+  background-color: $light-brown;
+  color: $white;
+}
