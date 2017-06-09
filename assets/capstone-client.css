@@ -6131,7 +6131,11 @@ button.close {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
 body {
+<<<<<<< HEAD
   background: #f2f2f2;
+=======
+  background: #fff;
+>>>>>>> Update files to deploy to production.
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px; }
 
@@ -6155,7 +6159,11 @@ h1 h2 {
 .navbar {
   margin-top: 5px; }
 
+<<<<<<< HEAD
 .navbar-brand .form-title {
+=======
+.navbar-brand {
+>>>>>>> Update files to deploy to production.
   font-family: 'Playfair Display', serif;
   font-size: 30px; }
 
@@ -6229,6 +6237,7 @@ h1 h2 {
     font-size: 20px;
     font-weight: bold; }
 
+<<<<<<< HEAD
 .conversation-form-design {
   background-color: #FEFEFE;
   border-radius: 15px;
@@ -6236,6 +6245,10 @@ h1 h2 {
   max-width: 750px; }
 
 .conversation-messages-list ul {
+=======
+.conversation-messages-list ul {
+  background-color: #fff;
+>>>>>>> Update files to deploy to production.
   border-radius: 5px;
   padding: 10px; }
   .conversation-messages-list ul li {
@@ -6275,8 +6288,12 @@ h1 h2 {
   background-color: #DDD7C3; }
 
 .auth-form {
+<<<<<<< HEAD
   padding: 50px;
   text-align: left; }
+=======
+  padding: 50px; }
+>>>>>>> Update files to deploy to production.
 
 #sign-in-modal {
   position: fixed;
@@ -6298,6 +6315,14 @@ h1 h2 {
   padding-bottom: 5px;
   padding-top: 5px; }
 
+<<<<<<< HEAD
+=======
+section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+>>>>>>> Update files to deploy to production.
 .post-item-form-design {
   background-color: #EFEBD5;
   border: 3px;
@@ -6305,6 +6330,7 @@ h1 h2 {
   color: #555555;
   margin: 30px auto;
   max-width: 750px;
+<<<<<<< HEAD
   padding: 20px;
   text-align: left; }
 
@@ -6320,6 +6346,9 @@ h1 h2 {
   border-radius: 15px;
   max-width: 750px;
   padding: 8px;
+=======
+  padding: 10px;
+>>>>>>> Update files to deploy to production.
   text-align: left; }
 
 .bottom-btn {
@@ -6335,6 +6364,7 @@ h1 h2 {
   color: #555555;
   margin: 30px auto;
   max-width: 750px;
+<<<<<<< HEAD
   padding-top: 20px;
   text-align: center; }
 
@@ -6378,3 +6408,10 @@ tr:nth-child(even) {
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse; }
+=======
+  padding-top: 10px;
+  text-align: center; }
+
+.authentication-form-title {
+  color: #ffffff; }
+>>>>>>> Update files to deploy to production.
