@@ -1069,6 +1069,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("capstone-client/app")["default"].create({"name":"capstone-client","version":"0.0.0+bc17ba22"});
+  require("capstone-client/app")["default"].create({"name":"capstone-client","version":"0.0.0+7d9d839a"});
 }
 //# sourceMappingURL=capstone-client.map
