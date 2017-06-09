@@ -1,4 +1,4 @@
-
+{{!--
 <div class="modal in fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -33,19 +33,23 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
-{{!--
+
+
 <section class="post-form-design">
-  <h2 class="sign-in-title" >Sign In</h2>
-  {{#each flashMessages.queue as |flash|}}
+  <div class="form-title">
+  <h2>Sign In</h2>
+  </div>
+  {{!-- {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
-{{/each}}
+  {{/each}} --}}
 
   <form class="auth-form">
   {{email-input email=credentials.email}}
   {{password-input password=credentials.password}}
 </form>
+<div class="bottom-btn">
   <button type="submit" class="btn btn-primary" {{action "submit"}}>
     Sign In
   </button>
@@ -53,4 +57,6 @@
   <button id="user-input-btn" class="btn btn-default" {{action "reset"}}>
     Reset
   </button>
-</section> --}}
+</div>
+
+</section>
