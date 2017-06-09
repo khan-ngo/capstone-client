@@ -6,7 +6,7 @@
 
 
 body {
-  background: $white;
+  background: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   // text-transform: uppercase;
@@ -53,7 +53,7 @@ h1 h2 {
   margin-top: 5px;
 }
 
-.navbar-brand {
+.navbar-brand .form-title {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
 }
@@ -193,9 +193,15 @@ h1 h2 {
 }
 
 
+.conversation-form-design {
+  background-color: #FEFEFE;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 750px;
+}
+
 .conversation-messages-list {
   ul {
-    background-color: $white;
     border-radius: 5px;
     padding: 10px;
 
@@ -248,6 +254,7 @@ h1 h2 {
 
 .auth-form {
   padding: 50px;
+  text-align: left;
 }
 
 #sign-in-modal {
@@ -284,9 +291,9 @@ h1 h2 {
     padding-top: 5px;
   }
 
-section {
-  align-items: center;
-}
+// section {
+//   align-items: center;
+// }
 
 .post-item-form-design {
   background-color: #EFEBD5;
@@ -295,9 +302,25 @@ section {
   color: #555555;
   margin: 30px auto;
   max-width: 750px;
-  padding: 10px;
+  padding: 20px;
   text-align: left;
-  // background-image:url(http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share-800x450.jpg);
+}
+
+
+.edit-item-form-design {
+  background-color: #EFEBD5;
+  border-radius: 15px;
+  max-width: 750px;
+  padding: 8px;
+  text-align: left;
+}
+
+.view-item-form {
+  background-color: #EFEBD5;
+  border-radius: 15px;
+  max-width: 750px;
+  padding: 8px;
+  text-align: left;
 }
 
 .bottom-btn {
@@ -308,6 +331,7 @@ section {
   margin: 20px 0;
 }
 
+
 .post-form-design {
   background-color: #EFEBD5;
   border: 3px;
@@ -315,12 +339,60 @@ section {
   color: #555555;
   margin: 30px auto;
   max-width: 750px;
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
-  // background-image:url(http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share-800x450.jpg);
-
 }
 
-.authentication-form-title {
-  color: #ffffff;
+.change-password-form {
+  background-color: #EFEBD5;
+  border: 3px;
+  border-radius: 15px;
+  color: #555555;
+  margin: 30px auto;
+  max-width: 750px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+
+
+.edit-conversation-form-design {
+  background-color: #EFEBD5;
+  border: 3px;
+  border-radius: 15px;
+  color: #555555;
+  margin: 30px auto;
+  max-width: 750px;
+  padding: 20px;
+  text-align: left;
+}
+
+// .authentication-form-title {
+//   color: #ffffff;
+// }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+.table-header {
+  background-color: #EFEBD5;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }

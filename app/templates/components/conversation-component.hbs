@@ -1,8 +1,7 @@
-<h2>
-  {{conversation.name}}
-</h2>
-<div class="meta-line"></div>
+<h2>{{conversation.name}}</h2>
 
+<div class="meta-line"></div>
+<section class="conversation-form-design">
 <div class="conversation-messages-list">
   {{#if conversation.messages}}
     <ul>
@@ -16,7 +15,9 @@
     </ul>
   {{/if}}
 </div>
+</section>
 
+<section class="edit-conversation-form-design">
 <form {{action "submit" on="submit"}}>
   <input type="hidden" id="convo_id" value={{conversation.id}}/>
   <div class="form-group">
@@ -26,9 +27,11 @@
             value=message.body
             required="required"
             placeholder="Write a message..."}}
-  </div>
 
   <button type="submit" class="btn post-message-button">
     Send
   </button>
+</div>
+
 </form>
+</section>
