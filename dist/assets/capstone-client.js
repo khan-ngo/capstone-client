@@ -665,6 +665,8 @@ define('capstone-client/routes/change-password', ['exports', 'ember'], function 
 
         this.get('auth').changePassword(passwords).then(function () {
           return _this.get('auth').signOut();
+        }).then(function () {
+          return _this.transitionTo('application');
         })
         // .then(() => this.transitionTo('sign-in'))
         .then(function () {
