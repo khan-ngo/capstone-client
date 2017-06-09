@@ -1,16 +1,25 @@
-<h2 class="category-header">
-  {{category.name}}
-</h2>
+<h2 class="category-header">{{category.name}}</h2>
+
 <div class="meta-line"></div>
 
 <div class="category-items-list">
-  <ul>
+  <table>
+    <tr class="table-header">
+      <td>ID</td>
+      <td>{{category.name}} Title</td>
+      <td>Location</td>
+    </tr>
+
     {{#each category.items as |item|}}
-      <li>
-        {{#link-to 'item' item.id}}
-          {{item.title}} - {{item.location}}
-        {{/link-to}}
-      </li>
+    <tr>
+      <td>{{item.id}}</td>
+        <td>{{#link-to 'item' item.id}}
+          {{item.title}}
+        {{/link-to}}</td>
+        <td>{{#link-to 'item' item.id}}
+          {{item.location}}
+        {{/link-to}}</td>
+      </tr>
     {{/each}}
-  </ul>
+  </table>
 </div>

@@ -3,18 +3,38 @@
 <div class="meta-line"></div>
 
 <div class="my-items-list">
+  <table>
+    <tr class="table-header">
+      <td>ID</td>
+      <td>Category</td>
+      <td>Title</td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
   {{#each model as |category|}}
     {{#each category.items as |item|}}
       {{#if item.editable}}
-      <li>
-        id: {{item.id}} - {{item.title}} ({{item.category.name}})
+      <tr>
+      {{!-- <li> --}}
+        {{!-- id: {{item.id}} - {{item.title}} ({{item.category.name}}) --}}
+        <td>{{item.id}}</td>
+        <td>{{item.category.name}}</td>
+        <td>{{item.title}}</td>
+        <td>
         <div class="my-items-buttons">
           <button class="btn btn-xs edit-button" {{action 'edit' item.id}}>Edit</button>
+        </div>
+      </td>
+      <td>
+        <div class="my-items-buttons">
           <button class="btn btn-xs delete-button" {{action 'delete' item.id}}>Delete</button>
         </div>
-      </li>
+      </td>
+      </tr>
+
+      {{!-- </li> --}}
       {{/if}}
     {{/each}}
   {{/each}}
-
+</table>
 </div>

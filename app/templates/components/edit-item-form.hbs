@@ -1,33 +1,36 @@
-<form {{action "submit" on="submit"}}>
-  <div class="form-group">
-    <label for="title">Title:</label>
-    {{input
-            class="form-control"
-            id="title"
-            placeholder="Title"
-            value=item.title
-            required="required"}}
-  </div>
+<section class="edit-item-form-design">
+  <form {{action "submit" on="submit"}}>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      {{input
+        class="form-control"
+        id="title"
+        placeholder="Title"
+        value=item.title
+        required="required"}}
+      </div>
 
-  <div class="form-group">
-    <label for="location">Location:</label>
-    {{input
-            class="form-control"
-            id="location"
-            placeholder="e.g. Kendall Square"
-            value=item.location
-            required="required"}}
-  </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        {{input
+          class="form-control"
+          id="location"
+          placeholder="e.g. Kendall Square"
+          value=item.location
+          required="required"}}
+        </div>
 
   <div class="form-group">
     <label for="body">Body:</label>
     {{textarea
-            class="form-control"
-            id="body"
-            placeholder="Description"
-            value=item.body
-            required="required"}}
-  </div>
+      class="form-control"
+      id="body"
+      placeholder="Description"
+      value=item.body
+      required="required"}}
+    </div>
+
+    <div class="bottom-btn">
 
   <button type="submit" class="btn edit-item-button">
     Save
@@ -36,4 +39,8 @@
   <button class="btn cancel-button" {{action "back"}}>
     Cancel
   </button>
-</form>
+
+  </div>
+
+  </form>
+  </section>

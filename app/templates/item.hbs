@@ -1,12 +1,13 @@
 <h2>{{model.title}}  </h2>
 <div class="meta-line"></div>
 
-
+<section class="edit-item-form-design">
 <div class="single-item">
   <p class="location">{{model.location}}</p>
 
   <p>Description: {{model.body}}</p>
-  <p>Near: {{model.location}}</p>
+  <p>Location: {{model.location}}</p>
 
   {{contact-form submit="newConversation" item=model}}
 </div>
+</section>
