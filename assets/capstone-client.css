@@ -6131,7 +6131,8 @@ button.close {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
 body {
-  background: #f2f2f2;
+
+  background: #fff;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px; }
 
@@ -6155,7 +6156,8 @@ h1 h2 {
 .navbar {
   margin-top: 5px; }
 
-.navbar-brand .form-title {
+
+.navbar-brand {
   font-family: 'Playfair Display', serif;
   font-size: 30px; }
 
@@ -6229,13 +6231,9 @@ h1 h2 {
     font-size: 20px;
     font-weight: bold; }
 
-.conversation-form-design {
-  background-color: #FEFEFE;
-  border-radius: 15px;
-  margin: 30px auto;
-  max-width: 750px; }
 
 .conversation-messages-list ul {
+  background-color: #fff;
   border-radius: 5px;
   padding: 10px; }
   .conversation-messages-list ul li {
@@ -6278,6 +6276,7 @@ h1 h2 {
   padding: 50px;
   text-align: left; }
 
+
 #sign-in-modal {
   position: fixed;
   border: 10px solid #000; }
@@ -6297,6 +6296,7 @@ h1 h2 {
   max-height: 90%;
   padding-bottom: 5px;
   padding-top: 5px; }
+
 
 .post-item-form-design {
   background-color: #EFEBD5;
@@ -6320,6 +6320,7 @@ h1 h2 {
   border-radius: 15px;
   max-width: 750px;
   padding: 8px;
+
   text-align: left; }
 
 .bottom-btn {
