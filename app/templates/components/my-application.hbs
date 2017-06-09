@@ -2,21 +2,14 @@
   <div class="container-fluid">
     {{navbar-header}}
     <div class="collapse navbar-collapse" id="navigation">
+
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         {{!-- <li>{{#link-to "users"}}Users{{/link-to}}</li> --}}
-        <li>
-          {{#link-to "categories"}}Categories{{/link-to}}
-        </li>
-        <li>
-          {{#link-to "post-item"}}Post Item{{/link-to}}
-        </li>
-        <li>
-          {{#link-to "my-items"}}My Items{{/link-to}}
-        </li>
-        <li>
-          {{#link-to "conversations"}}Messages{{/link-to}}
-        </li>
+        <li>{{#link-to "categories"}}Categories{{/link-to}}</li>
+        <li>{{#link-to "post-item"}}Post Item{{/link-to}}</li>
+        <li>{{#link-to "my-items"}}My Items{{/link-to}}</li>
+        <li>{{#link-to "conversations"}}Messages{{/link-to}}</li>
         {{/if}}
       </ul>
 
@@ -47,47 +40,21 @@
       <img class="content-image" src="http://cdn.illibraio.it/wp-content/uploads/2016/09/sharing-economy.jpg">
       <img class="content-image" src="https://hollandfintech.com/wp-content/uploads/2015/11/sharing-economy.jpg">
       <img class="content-image" src="http://siliconcanals.nl/wp-content/uploads/2017/01/shutterstock_507794089.jpg">
-
-
-        {{!-- <ul class="sidebar-nav">
-            <li>
-              {{#link-to "categories"}}Categories{{/link-to}}
-            </li>
-            <li>
-              {{#link-to "post-item"}}Post Item{{/link-to}}
-            </li>
-            <li>
-              {{#link-to "my-items"}}My Items{{/link-to}}
-            </li>
-            <li>
-              {{#link-to "conversations"}}Messages{{/link-to}}
-            </li>
-        </ul> --}}
     </div>
     <!-- /#sidebar-wrapper -->
 
       {{else}}
       <div class='welcome-info'>
         {{outlet}}
-
-        Out with the old, in with the new.
         <img class="landing-image" src="http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share.jpg" >
-
-        Don't add to the landfill! Share your unwanted items!
-
-
-            {{!-- <button type="button" class="btn btn-block sign-in-button" data-toggle="modal" data-target="#sign-in-modal">
-              {{#link-to "sign-in"}}Sign In{{/link-to}}</button>
-            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#sign-up-modal">
-            {{#link-to "sign-up"}}Sign Up{{/link-to}}</button> --}}
           </div>
   {{/if}}
 
   <div class="col-md-8 col-sm-8">
     <div class="content">
       {{#if isAuthenticated}}
-    {{outlet}}
-    {{/if}}
+      {{outlet}}
+      {{/if}}
 
     </div>
   </div>
