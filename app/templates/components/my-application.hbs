@@ -2,21 +2,14 @@
   <div class="container-fluid">
     {{navbar-header}}
     <div class="collapse navbar-collapse" id="navigation">
+
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         {{!-- <li>{{#link-to "users"}}Users{{/link-to}}</li> --}}
-        <li>
-          {{#link-to "categories"}}Categories{{/link-to}}
-        </li>
-        <li>
-          {{#link-to "post-item"}}Post Item{{/link-to}}
-        </li>
-        <li>
-          {{#link-to "my-items"}}My Items{{/link-to}}
-        </li>
-        <li>
-          {{#link-to "conversations"}}Messages{{/link-to}}
-        </li>
+        <li>{{#link-to "categories"}}Categories{{/link-to}}</li>
+        <li>{{#link-to "post-item"}}Post Item{{/link-to}}</li>
+        <li>{{#link-to "my-items"}}My Items{{/link-to}}</li>
+        <li>{{#link-to "conversations"}}Messages{{/link-to}}</li>
         {{/if}}
       </ul>
 
@@ -48,7 +41,6 @@
       <img class="content-image" src="https://hollandfintech.com/wp-content/uploads/2015/11/sharing-economy.jpg">
       <img class="content-image" src="http://siliconcanals.nl/wp-content/uploads/2017/01/shutterstock_507794089.jpg">
 
-
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -58,14 +50,14 @@
 
         <img class="landing-image" src="http://marketingland.com/wp-content/ml-loads/2015/11/ss-sharing-share.jpg" >
 
-          </div>
+  </div>
   {{/if}}
 
   <div class="col-md-8 col-sm-8">
     <div class="content">
       {{#if isAuthenticated}}
-    {{outlet}}
-    {{/if}}
+      {{outlet}}
+      {{/if}}
 
     </div>
   </div>
